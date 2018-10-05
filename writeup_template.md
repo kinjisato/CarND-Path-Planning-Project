@@ -47,6 +47,36 @@ As fisrt, the lane is found where the car (not ego) is running.
                 }
 ```
 
+After that, the car speed and its position at XY cordinate are checked. (same as lecture code).
+When the car is running on my lane, the closest car speed is stored.
+When the car is running on other lane, and the potision is between -15 behind and 30 ahead, this is stored as the car is on the lane.
+
+```C++
+                double vx = sensor_fusion[i][3];
+                double vy = sensor_fusion[i][4];
+                double check_speed = sqrt(vx*vx+vy*vy);
+                double check_car_s = sensor_fusion[i][5];
+                check_car_s += ((double)prev_size* .02*check_speed);
+                
+                if (car_lane == lane){ // car is in my lane
+                    if((check_car_s > car_s) && ((check_car_s - car_s) < 30)){
+                        car_ahead = true;
+                        if((check_car_s - car_s) < s_closest){
+                            s_closest = check_car_s;
+                            car_vel = check_speed*2.24;
+                        }
+                    }
+                } else if(car_lane == (lane -1) ){ // car is in left of my lane
+                    if(((check_car_s - car_s) < 30) &&( (check_car_s - car_s) > -15)){
+                        car_left = true;
+                    }
+                } else if(car_lane  == (lane +1)){ // car is in right of my lane
+                    if(((check_car_s - car_s) < 30) && ((check_car_s - car_s) > -15)) {
+                        car_right = true;
+                    }
+                }
+
+```
 
 
 
