@@ -78,6 +78,28 @@ When the car is running on other lane, and the potision is between -15 behind an
 
 ```
 
+If there is other car in front of my car, my car is going to change to the lane which no other car on the lane. If all lane is not free, my car keeps current lane. 
+And when my car is not running center lane, and the center lane is free, my car is going to back to center.
+
+
+```C++
+            if(car_ahead == true){
+                if((car_left == false)&&(lane > 0)){
+                    lane -= 1;
+                } else if((car_right == false)&&(lane < 2)){
+                    lane += 1;
+                }
+            } else {
+                if(lane != 1){
+                    if(((lane == 0)&&(car_right == false)) || ((lane == 2)&&(car_left == false))){
+                        lane = 1;
+                    }
+                }
+            }
+```
+
+
+
 
 
 The code for this step is contained in the first code cell of the IPython notebook (or in lines # through # of the file called `some_file.py`).  
