@@ -4,13 +4,9 @@
 ---
 
 [//]: # (Image References)
-[image1]: ./examples/car_not_car.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
+[image1]: ./results/Rubric01.png
+[image2]: ./results/Rubric02.png
+
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/1020/view) Points
@@ -21,19 +17,11 @@
 
 ### Compilation
 
-| CRITERIA    | MEETS SPECIFICATIONS
-|:-------------------------:|:----------------------------------------------------:|
-| The code comiles correctly| Code must compile without errors with cmake and make.
+![alt text][image1]
 
 ### Valid Trajectories
 
-| CRITERIA    | MEETS SPECIFICATIONS
-|:-------------------------:|:----------------------------------------------------:|
-| The car is able to drive at least 4.32 miles without incident..| The top right screen of the simulator shows the current/best miles driven without incident.
-Incidents include exceeding acceleration/jerk/speed, collision, and driving outside of the lanes.
-Each incident case is also listed below in more detail.
-
-
+![alt text][image2]
 
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
