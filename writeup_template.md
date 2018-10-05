@@ -17,13 +17,15 @@
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
-### Writeup / README
+### Writeup
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Vehicle-Detection/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
+### Compilation
 
-You're reading it!
+| CRITERIA    | MEETS SPECIFICATIONS
+|:-------------:|:---------------:|
+| The code comiles correctly| Code must compile without errors with cmake and make. Given that we've made CMakeLists.txt as general as possible, it's recommend that you do
+not change it unless you can guarantee that your changes will still compile on any platform.
 
-### Histogram of Oriented Gradients (HOG)
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
