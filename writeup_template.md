@@ -22,9 +22,11 @@
 ### Compilation
 
 | CRITERIA    | MEETS SPECIFICATIONS
-|:-------------:|:---------------:|
-| The code comiles correctly| Code must compile without errors with cmake and make. Given that we've made CMakeLists.txt as general as possible, it's recommend that you do
-not change it unless you can guarantee that your changes will still compile on any platform.
+|:-------------------------:|:----------------------------------------------------:|
+| The code comiles correctly| Code must compile without errors with cmake and make.
+
+### Valid Trajectories
+
 
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
