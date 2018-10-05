@@ -6,6 +6,7 @@
 [//]: # (Image References)
 [image1]: ./results/Rubric01.png
 [image2]: ./results/Rubric02.png
+[image3]: ./results/results01.png
 
 [video1]: ./project_video.mp4
 
@@ -22,7 +23,7 @@
 ### Valid Trajectories
 
 ![alt text][image2]
-
+![alt text][image3]
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
