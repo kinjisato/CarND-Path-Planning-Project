@@ -25,6 +25,7 @@
 ![alt text][image2]
 ![alt text][image3]
 
+
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
 The code for this step is contained in the first code cell of the IPython notebook (or in lines # through # of the file called `some_file.py`).  
