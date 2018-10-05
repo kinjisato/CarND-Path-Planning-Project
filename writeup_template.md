@@ -26,7 +26,29 @@
 ![alt text][image3]
 
 
-#### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
+### Reflection
+
+As fisrt, the lane is found where the car (not ego) is running.
+
+```C++
+                float d = sensor_fusion[i][6];
+                int car_lane = -1;
+                // check which lane car is running
+                if (d > 0 && d < 4){
+                    car_lane = 0;
+                } else if (d > 4 && d < 8){
+                    car_lane = 1;
+                } else if (d > 8 && d < 12){
+                    car_lane = 2;
+                }
+                if (car_lane == -1){
+                    // out of the lanes
+                    continue;
+                }
+```
+
+
+
 
 The code for this step is contained in the first code cell of the IPython notebook (or in lines # through # of the file called `some_file.py`).  
 
